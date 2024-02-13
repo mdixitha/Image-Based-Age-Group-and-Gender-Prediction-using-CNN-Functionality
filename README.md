@@ -1,13 +1,32 @@
-# Gender-and-Age-Detection   <img alt="GitHub" src="https://img.shields.io/github/license/smahesh29/Gender-and-Age-Detection">
+#  Image Based Age Group and Gender Prediction using CNN Functionality <img alt="GitHub" src="https://img.shields.io/github/license/smahesh29/Gender-and-Age-Detection">
 
 
 <h2>Objective :</h2>
-<p>To build a gender and age detector that can approximately guess the gender and age of the person (face) in a picture or through webcam.</p>
+<p>To build a gender and age detector that can approximately guess the gender and age of the person (face) in a picture or through webcam by using CNN functionality</p>
+
+### CNN Functionality:
+* Definition: Convolutional Neural Networks (CNNs) are a class of deep learning models designed specifically for processing structured grid data, such as images.
+*Inspiration: CNNs are inspired by the organization of the visual cortex in the human brain, where neurons have receptive fields overlapping to detect visual patterns.
+
+#### Layers: CNNs typically consist of several layers:
+
+* Convolutional layers: Apply convolution operations to extract features from input images.
+* Pooling layers: Downsample the feature maps obtained from convolutional layers to reduce spatial dimensions.
+* Fully connected layers: Perform high-level feature learning and classification.
+* Image classification: Assigning a label or category to an image.
+* Object detection: Identifying and localizing objects within an image.
+* Image segmentation: Partitioning an image into meaningful segments or regions.
 
 <h2>About the Project :</h2>
 <p>In this Python Project, I had used Deep Learning to accurately identify the gender and age of a person from a single image of a face. I used the models trained by <a href="https://talhassner.github.io/home/projects/Adience/Adience-data.html">Tal Hassner and Gil Levi</a>. The predicted gender may be one of ‘Male’ and ‘Female’, and the predicted age may be one of the following ranges- (0 – 2), (4 – 6), (8 – 12), (15 – 20), (25 – 32), (38 – 43), (48 – 53), (60 – 100) (8 nodes in the final softmax layer). It is very difficult to accurately guess an exact age from a single image because of factors like makeup, lighting, obstructions, and facial expressions. And so, I made this a classification problem instead of making it one of regression.</p>
+## Features:
+
+* Age Prediction: The CNN model predicts the age group of individuals, categorizing them into predefined age ranges.
+
+* Gender Prediction: The model also predicts the gender of individuals, distinguishing between male and female.
 
 <h2>Dataset :</h2>
+
 <p>For this python project, I had used the Adience dataset; the dataset is available in the public domain and you can find it <a href="https://www.kaggle.com/ttungl/adience-benchmark-gender-and-age-classification">here</a>. This dataset serves as a benchmark for face photos and is inclusive of various real-world imaging conditions like noise, lighting, pose, and appearance. The images have been collected from Flickr albums and distributed under the Creative Commons (CC) license. It has a total of 26,580 photos of 2,284 subjects in eight age ranges (as mentioned above) and is about 1GB in size. The models I used had been trained on this dataset.</p>
 
 <h2>Additional Python Libraries Required :</h2>
@@ -53,9 +72,6 @@
   <li>Press <b>Ctrl + C</b> to stop the program execution.</li>
 </ul>
 
-# Working:
-[![Watch the video](https://img.youtube.com/vi/ReeccRD21EU/0.jpg)](https://youtu.be/ReeccRD21EU)
-
 <h2>Examples :</h2>
 <p><b>NOTE:- I downloaded the images from Google,if you have any query or problem i can remove them, i just used it for Educational purpose.</b></p>
 
@@ -75,29 +91,20 @@
     Gender: Male
     Age: 4-6 years    
     
-<img src="Example/Detecting age and gender kid1.png">
-
-    >python detect.py --image kid2.jpg
-    Gender: Female
-    Age: 4-6 years  
     
 <img src="Example/Detecting age and gender kid2.png">
 
     >python detect.py --image man1.jpg
     Gender: Male
     Age: 38-43 years
-    
-<img src="Example/Detecting age and gender man1.png">
 
-    >python detect.py --image man2.jpg
-    Gender: Male
-    Age: 25-32 years
-    
-<img src="Example/Detecting age and gender man2.png">
+## Contributing
+Contributions to this project are welcome! If you have ideas for improvements, bug fixes, or new features, feel free to open an issue or submit a pull request.
 
-    >python detect.py --image woman1.jpg
-    Gender: Female
-    Age: 38-43 years
+## License
+This project is licensed under the MIT License.
+
     
-<img src="Example/Detecting age and gender woman1.png">
+    
+
               
